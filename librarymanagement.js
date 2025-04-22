@@ -39,15 +39,15 @@ class LibraryItem {
     }
     checkout(){
         this.isAvailable = false
-        console.log(`You have checked out ${this.title}\n**********************************`);
+        console.log(`**********************************\nYou have checked out ${this.title}\n**********************************`);
     };
     returnItem(){
         this.isAvailable = true
-        console.log(`You have returned ${this.title}\n**********************************`);
+        console.log(`**********************************\nYou have returned ${this.title}\n**********************************`);
     };
 }  
 class Book extends LibraryItem {
-    constructor(author, genre,){
+    constructor(author, genre){
         super(); // gets properties and methods from LibraryItem
         this.author = author
         this.genre = genre
